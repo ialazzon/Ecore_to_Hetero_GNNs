@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<iotbuilding:BuildingSnapshot xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:iotbuilding="http://example.org/iotbuilding/1.0" xmi:version="2.0" label="Normal" windowStart="2026-01-01T19:00:00" floorId="floor_379">
+  <rooms id="g379_r0" roomType="Corridor" floorArea="46.8" nominalOccupancy="18" has="g379_r0_s0 g379_r0_s1 g379_r0_s2 g379_r0_s3">
+    <connection xmi:id="c0" relation="ADJACENT_DOOR" distance="21.99" airflowCoupling="0.602" room="//@rooms.5"/>
+  </rooms>
+  <rooms id="g379_r1" roomType="Office" floorArea="56.4" nominalOccupancy="15" room_connection="c3" has="g379_r1_s0 g379_r1_s1 g379_r1_s2 g379_r1_s3 g379_r1_s4 g379_r1_s5">
+    <connection xmi:id="c1" relation="SHARED_WALL" distance="6.3" airflowCoupling="0.168" room="//@rooms.5"/>
+  </rooms>
+  <rooms id="g379_r2" roomType="Kitchen" floorArea="32.5" nominalOccupancy="17" room_connection="c6 c7" has="g379_r2_s0 g379_r2_s1 g379_r2_s2 g379_r2_s3">
+    <connection xmi:id="c2" relation="SHARED_WALL" distance="11.45" airflowCoupling="0.36" room="//@rooms.3"/>
+    <connection xmi:id="c3" relation="SAME_HVAC_DUCT" distance="3.87" airflowCoupling="0.876" room="//@rooms.1"/>
+  </rooms>
+  <rooms id="g379_r3" roomType="Stairwell" floorArea="57.4" nominalOccupancy="19" room_connection="c2 c5" has="g379_r3_s0 g379_r3_s1 g379_r3_s2 g379_r3_s3 g379_r3_s4 g379_r3_s5">
+    <connection xmi:id="c4" relation="ADJACENT_DOOR" distance="22.82" airflowCoupling="0.794" room="//@rooms.5"/>
+  </rooms>
+  <rooms id="g379_r4" roomType="Office" floorArea="26.3" nominalOccupancy="16" has="g379_r4_s0 g379_r4_s1 g379_r4_s2 g379_r4_s3 g379_r4_s4">
+    <connection xmi:id="c5" relation="ADJACENT_DOOR" distance="19.92" airflowCoupling="0.893" room="//@rooms.3"/>
+    <connection xmi:id="c6" relation="SAME_HVAC_DUCT" distance="9.65" airflowCoupling="0.631" room="//@rooms.2"/>
+  </rooms>
+  <rooms id="g379_r5" roomType="Lobby" floorArea="58.6" nominalOccupancy="2" room_connection="c0 c1 c4" has="g379_r5_s0 g379_r5_s1 g379_r5_s2">
+    <connection xmi:id="c7" relation="ADJACENT_DOOR" distance="24.46" airflowCoupling="0.176" room="//@rooms.2"/>
+  </rooms>
+  <sensor modality="CO2" mean="759.1622" max="765.8243" slope="-0.1188" variance="75.2789" zScoreVsHistory="5.1527" xmi:id="g379_r0_s0"/>
+  <sensor modality="Motion" mean="-0.0808" max="0.1020" slope="-0.0353" variance="0.2940" zScoreVsHistory="-2.3081" xmi:id="g379_r0_s1"/>
+  <sensor modality="Temperature" mean="20.1183" max="23.5702" slope="0.0691" variance="4.4274" zScoreVsHistory="-1.5681" xmi:id="g379_r0_s2"/>
+  <sensor modality="Power" mean="0.2383" max="0.4205" slope="0.2354" variance="0.4106" zScoreVsHistory="-1.0780" xmi:id="g379_r0_s3"/>
+  <sensor modality="Temperature" mean="18.4331" max="22.9503" slope="-0.2021" variance="3.0843" zScoreVsHistory="-2.9724" xmi:id="g379_r1_s0"/>
+  <sensor modality="Humidity" mean="37.5074" max="44.9738" slope="0.0541" variance="15.9617" zScoreVsHistory="-1.4985" xmi:id="g379_r1_s1"/>
+  <sensor modality="Smoke" mean="0.0420" max="0.1231" slope="-0.1012" variance="0.0257" zScoreVsHistory="2.1993" xmi:id="g379_r1_s2"/>
+  <sensor modality="Motion" mean="0.4448" max="0.8483" slope="-0.1040" variance="0.2226" zScoreVsHistory="2.9478" xmi:id="g379_r1_s3"/>
+  <sensor modality="CO2" mean="294.8497" max="483.6300" slope="0.0474" variance="166.2967" zScoreVsHistory="-2.5858" xmi:id="g379_r1_s4"/>
+  <sensor modality="Power" mean="0.8999" max="1.3813" slope="0.1630" variance="0.3801" zScoreVsHistory="3.3324" xmi:id="g379_r1_s5"/>
+  <sensor modality="Motion" mean="0.0569" max="0.2383" slope="0.1140" variance="0.2100" zScoreVsHistory="-0.9306" xmi:id="g379_r2_s0"/>
+  <sensor modality="Smoke" mean="0.0747" max="0.0823" slope="0.1126" variance="0.0153" zScoreVsHistory="5.4749" xmi:id="g379_r2_s1"/>
+  <sensor modality="Temperature" mean="22.9783" max="25.8349" slope="-0.0410" variance="2.7617" zScoreVsHistory="0.8153" xmi:id="g379_r2_s2"/>
+  <sensor modality="Power" mean="0.2269" max="0.8768" slope="0.0815" variance="0.4454" zScoreVsHistory="-1.1542" xmi:id="g379_r2_s3"/>
+  <sensor modality="Motion" mean="0.1007" max="0.3135" slope="-0.0643" variance="0.3003" zScoreVsHistory="-0.4928" xmi:id="g379_r3_s0"/>
+  <sensor modality="Smoke" mean="-0.0205" max="0.0335" slope="-0.0772" variance="0.0140" zScoreVsHistory="-4.0484" xmi:id="g379_r3_s1"/>
+  <sensor modality="CO2" mean="484.0409" max="653.4383" slope="0.0747" variance="120.6541" zScoreVsHistory="0.5673" xmi:id="g379_r3_s2"/>
+  <sensor modality="Humidity" mean="43.6814" max="49.0568" slope="0.0122" variance="12.0822" zScoreVsHistory="-0.2637" xmi:id="g379_r3_s3"/>
+  <sensor modality="Temperature" mean="22.6980" max="23.1185" slope="-0.1792" variance="3.5344" zScoreVsHistory="0.5817" xmi:id="g379_r3_s4"/>
+  <sensor modality="Power" mean="0.3284" max="0.4986" slope="-0.1023" variance="0.3097" zScoreVsHistory="-0.4772" xmi:id="g379_r3_s5"/>
+  <sensor modality="CO2" mean="612.9526" max="645.6025" slope="0.0498" variance="149.8405" zScoreVsHistory="2.7159" xmi:id="g379_r4_s0"/>
+  <sensor modality="Motion" mean="-0.1970" max="0.0671" slope="0.1281" variance="0.2946" zScoreVsHistory="-3.4699" xmi:id="g379_r4_s1"/>
+  <sensor modality="Temperature" mean="28.2887" max="31.1953" slope="-0.1277" variance="0.5887" zScoreVsHistory="5.2406" xmi:id="g379_r4_s2"/>
+  <sensor modality="Power" mean="-0.1287" max="-0.0488" slope="0.0248" variance="0.4781" zScoreVsHistory="-3.5248" xmi:id="g379_r4_s3"/>
+  <sensor modality="Smoke" mean="0.0306" max="0.0429" slope="-0.0342" variance="0.0335" zScoreVsHistory="1.0634" xmi:id="g379_r4_s4"/>
+  <sensor modality="Temperature" mean="17.0355" max="20.4370" slope="-0.1077" variance="2.7526" zScoreVsHistory="-4.1371" xmi:id="g379_r5_s0"/>
+  <sensor modality="CO2" mean="623.6938" max="785.2014" slope="0.0246" variance="229.6378" zScoreVsHistory="2.8949" xmi:id="g379_r5_s1"/>
+  <sensor modality="Motion" mean="0.1202" max="0.2800" slope="0.0209" variance="0.3934" zScoreVsHistory="-0.2984" xmi:id="g379_r5_s2"/>
+</iotbuilding:BuildingSnapshot>

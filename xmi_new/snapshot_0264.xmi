@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<iotbuilding:BuildingSnapshot xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:iotbuilding="http://example.org/iotbuilding/1.0" xmi:version="2.0" label="SpoofingAttack" windowStart="2026-01-01T00:00:00" floorId="floor_264">
+  <rooms id="g264_r0" roomType="Office" floorArea="36.5" nominalOccupancy="30" has="g264_r0_s0 g264_r0_s1 g264_r0_s2 g264_r0_s3 g264_r0_s4">
+    <connection xmi:id="c0" relation="SHARED_WALL" distance="20.67" airflowCoupling="0.609" room="//@rooms.5"/>
+  </rooms>
+  <rooms id="g264_r1" roomType="Corridor" floorArea="13.4" nominalOccupancy="22" room_connection="c6" has="g264_r1_s0 g264_r1_s1 g264_r1_s2 g264_r1_s3">
+    <connection xmi:id="c1" relation="SHARED_WALL" distance="5.89" airflowCoupling="0.254" room="//@rooms.5"/>
+  </rooms>
+  <rooms id="g264_r2" roomType="Stairwell" floorArea="38.9" nominalOccupancy="8" room_connection="c9" has="g264_r2_s0 g264_r2_s1 g264_r2_s2 g264_r2_s3 g264_r2_s4 g264_r2_s5">
+    <connection xmi:id="c2" relation="ADJACENT_DOOR" distance="20.12" airflowCoupling="0.755" room="//@rooms.10"/>
+  </rooms>
+  <rooms id="g264_r3" roomType="Office" floorArea="49.0" nominalOccupancy="5" room_connection="c7 c10" has="g264_r3_s0 g264_r3_s1 g264_r3_s2 g264_r3_s3">
+    <connection xmi:id="c3" relation="SHARED_WALL" distance="16.57" airflowCoupling="0.033" room="//@rooms.9"/>
+    <connection xmi:id="c4" relation="SAME_HVAC_DUCT" distance="24.75" airflowCoupling="0.376" room="//@rooms.10"/>
+  </rooms>
+  <rooms id="g264_r4" roomType="Lobby" floorArea="17.1" nominalOccupancy="25" has="g264_r4_s0 g264_r4_s1 g264_r4_s2 g264_r4_s3 g264_r4_s4 g264_r4_s5">
+    <connection xmi:id="c5" relation="ADJACENT_DOOR" distance="17.69" airflowCoupling="0.125" room="//@rooms.6"/>
+  </rooms>
+  <rooms id="g264_r5" roomType="Server" floorArea="55.2" nominalOccupancy="25" room_connection="c0 c1 c12" has="g264_r5_s0 g264_r5_s1 g264_r5_s2 g264_r5_s3 g264_r5_s4 g264_r5_s5"/>
+  <rooms id="g264_r6" roomType="Corridor" floorArea="29.2" nominalOccupancy="14" room_connection="c5 c11" has="g264_r6_s0 g264_r6_s1 g264_r6_s2 g264_r6_s3 g264_r6_s4 g264_r6_s5">
+    <connection xmi:id="c6" relation="SAME_HVAC_DUCT" distance="16.2" airflowCoupling="0.574" room="//@rooms.1"/>
+    <connection xmi:id="c7" relation="SAME_HVAC_DUCT" distance="23.36" airflowCoupling="0.782" room="//@rooms.3"/>
+  </rooms>
+  <rooms id="g264_r7" roomType="Office" floorArea="30.8" nominalOccupancy="8" has="g264_r7_s0 g264_r7_s1 g264_r7_s2 g264_r7_s3">
+    <connection xmi:id="c8" relation="ADJACENT_DOOR" distance="4.5" airflowCoupling="0.343" room="//@rooms.10"/>
+  </rooms>
+  <rooms id="g264_r8" roomType="Server" floorArea="53.5" nominalOccupancy="10" has="g264_r8_s0 g264_r8_s1 g264_r8_s2 g264_r8_s3">
+    <connection xmi:id="c9" relation="SAME_HVAC_DUCT" distance="24.57" airflowCoupling="0.097" room="//@rooms.2"/>
+    <connection xmi:id="c10" relation="SAME_HVAC_DUCT" distance="15.23" airflowCoupling="0.558" room="//@rooms.3"/>
+    <connection xmi:id="c11" relation="SAME_HVAC_DUCT" distance="12.87" airflowCoupling="0.416" room="//@rooms.6"/>
+  </rooms>
+  <rooms id="g264_r9" roomType="Office" floorArea="37.6" nominalOccupancy="19" room_connection="c3 c13" has="g264_r9_s0 g264_r9_s1 g264_r9_s2 g264_r9_s3 g264_r9_s4">
+    <connection xmi:id="c12" relation="SAME_HVAC_DUCT" distance="12.82" airflowCoupling="0.898" room="//@rooms.5"/>
+  </rooms>
+  <rooms id="g264_r10" roomType="Office" floorArea="24.1" nominalOccupancy="19" room_connection="c2 c4 c8" has="g264_r10_s0 g264_r10_s1 g264_r10_s2 g264_r10_s3 g264_r10_s4">
+    <connection xmi:id="c13" relation="SHARED_WALL" distance="4.01" airflowCoupling="0.651" room="//@rooms.9"/>
+  </rooms>
+  <sensor modality="Humidity" mean="26.6917" max="42.6706" slope="0.2170" variance="11.5610" zScoreVsHistory="-3.6617" xmi:id="g264_r0_s0"/>
+  <sensor modality="Temperature" mean="32.2953" max="33.4027" slope="0.3437" variance="2.3848" zScoreVsHistory="8.5794" xmi:id="g264_r0_s1"/>
+  <sensor modality="CO2" mean="546.0692" max="710.8513" slope="0.2090" variance="121.0825" zScoreVsHistory="1.6012" xmi:id="g264_r0_s2"/>
+  <sensor modality="Power" mean="0.1019" max="0.6620" slope="-0.0961" variance="0.4649" zScoreVsHistory="-1.9876" xmi:id="g264_r0_s3"/>
+  <sensor modality="Smoke" mean="-0.0349" max="-0.0208" slope="0.0077" variance="0.0210" zScoreVsHistory="-5.4932" xmi:id="g264_r0_s4"/>
+  <sensor modality="CO2" mean="486.1851" max="528.7831" slope="0.1763" variance="106.4615" zScoreVsHistory="0.6031" xmi:id="g264_r1_s0"/>
+  <sensor modality="Power" mean="0.3576" max="0.4157" slope="-0.1578" variance="0.4896" zScoreVsHistory="-0.2828" xmi:id="g264_r1_s1"/>
+  <sensor modality="Temperature" mean="20.7461" max="22.3951" slope="-0.0574" variance="1.9390" zScoreVsHistory="-1.0449" xmi:id="g264_r1_s2"/>
+  <sensor modality="Smoke" mean="0.0145" max="0.0272" slope="0.1132" variance="0.0239" zScoreVsHistory="-0.5456" xmi:id="g264_r1_s3"/>
+  <sensor modality="Motion" mean="0.3289" max="0.5021" slope="-0.0213" variance="0.2381" zScoreVsHistory="1.7889" xmi:id="g264_r2_s0"/>
+  <sensor modality="Humidity" mean="32.1804" max="33.4042" slope="0.1744" variance="14.5683" zScoreVsHistory="-2.5639" xmi:id="g264_r2_s1"/>
+  <sensor modality="Temperature" mean="19.4084" max="22.6953" slope="-0.0039" variance="2.9240" zScoreVsHistory="-2.1597" xmi:id="g264_r2_s2"/>
+  <sensor modality="Smoke" mean="0.0299" max="0.0609" slope="-0.0898" variance="0.0317" zScoreVsHistory="0.9886" xmi:id="g264_r2_s3"/>
+  <sensor modality="Power" mean="0.6052" max="0.8217" slope="0.0760" variance="0.4224" zScoreVsHistory="1.3677" xmi:id="g264_r2_s4"/>
+  <sensor modality="CO2" mean="430.4411" max="538.6193" slope="0.1952" variance="90.6966" zScoreVsHistory="-0.3260" xmi:id="g264_r2_s5"/>
+  <sensor modality="Motion" mean="0.2402" max="0.4220" slope="0.0418" variance="0.2287" zScoreVsHistory="0.9024" xmi:id="g264_r3_s0"/>
+  <sensor modality="Temperature" mean="23.7740" max="25.5609" slope="-0.1101" variance="4.3513" zScoreVsHistory="1.4783" xmi:id="g264_r3_s1"/>
+  <sensor modality="Humidity" mean="43.5037" max="53.6576" slope="-0.0183" variance="9.9853" zScoreVsHistory="-0.2993" xmi:id="g264_r3_s2"/>
+  <sensor modality="CO2" mean="400.2797" max="543.7209" slope="0.0939" variance="77.3032" zScoreVsHistory="-0.8287" xmi:id="g264_r3_s3"/>
+  <sensor modality="Motion" mean="0.1019" max="0.1039" slope="-0.0074" variance="0.3074" zScoreVsHistory="-0.4806" xmi:id="g264_r4_s0"/>
+  <sensor modality="Power" mean="0.5310" max="0.9685" slope="0.2149" variance="0.3447" zScoreVsHistory="0.8733" xmi:id="g264_r4_s1"/>
+  <sensor modality="Temperature" mean="15.4725" max="20.8325" slope="0.0103" variance="2.9155" zScoreVsHistory="-5.4396" xmi:id="g264_r4_s2"/>
+  <sensor modality="CO2" mean="128.9806" max="185.5944" slope="0.1258" variance="202.6818" zScoreVsHistory="-5.3503" xmi:id="g264_r4_s3"/>
+  <sensor modality="Humidity" mean="52.3228" max="66.2274" slope="-0.1055" variance="9.8596" zScoreVsHistory="1.4646" xmi:id="g264_r4_s4"/>
+  <sensor modality="Smoke" mean="0.0381" max="0.0603" slope="0.0440" variance="0.0192" zScoreVsHistory="1.8081" xmi:id="g264_r4_s5"/>
+  <sensor modality="Power" mean="0.3965" max="0.5382" slope="-0.0523" variance="0.4281" zScoreVsHistory="-0.0231" xmi:id="g264_r5_s0"/>
+  <sensor modality="Humidity" mean="35.1309" max="45.9296" slope="0.0786" variance="10.5369" zScoreVsHistory="-1.9738" xmi:id="g264_r5_s1"/>
+  <sensor modality="CO2" mean="522.2436" max="567.5388" slope="-0.1183" variance="137.7395" zScoreVsHistory="1.2041" xmi:id="g264_r5_s2"/>
+  <sensor modality="Motion" mean="0.2933" max="0.3570" slope="0.1174" variance="0.1683" zScoreVsHistory="1.4331" xmi:id="g264_r5_s3"/>
+  <sensor modality="Smoke" mean="0.0382" max="0.0606" slope="-0.0612" variance="0.0184" zScoreVsHistory="1.8215" xmi:id="g264_r5_s4"/>
+  <sensor modality="Temperature" mean="24.8796" max="29.8641" slope="0.1662" variance="3.3617" zScoreVsHistory="2.3996" xmi:id="g264_r5_s5"/>
+  <sensor modality="Motion" mean="0.0386" max="0.1839" slope="-0.0756" variance="0.2172" zScoreVsHistory="-1.1141" xmi:id="g264_r6_s0"/>
+  <sensor modality="CO2" mean="569.9216" max="597.6764" slope="0.2712" variance="132.7076" zScoreVsHistory="1.9987" xmi:id="g264_r6_s1"/>
+  <sensor modality="Temperature" mean="32.0630" max="33.5482" slope="0.1410" variance="4.3316" zScoreVsHistory="8.3859" xmi:id="g264_r6_s2"/>
+  <sensor modality="Smoke" mean="0.0219" max="0.0323" slope="0.0668" variance="0.0198" zScoreVsHistory="0.1873" xmi:id="g264_r6_s3"/>
+  <sensor modality="Humidity" mean="65.3178" max="83.1117" slope="0.1304" variance="15.9662" zScoreVsHistory="4.0636" xmi:id="g264_r6_s4"/>
+  <sensor modality="Power" mean="0.3775" max="0.5373" slope="0.3079" variance="0.2472" zScoreVsHistory="-0.1502" xmi:id="g264_r6_s5"/>
+  <sensor modality="CO2" mean="478.8599" max="795.6076" slope="0.1390" variance="68.3472" zScoreVsHistory="0.4810" xmi:id="g264_r7_s0"/>
+  <sensor modality="Power" mean="0.5134" max="0.9785" slope="0.1748" variance="0.3910" zScoreVsHistory="0.7560" xmi:id="g264_r7_s1"/>
+  <sensor modality="Motion" mean="0.1052" max="0.6363" slope="-0.0376" variance="0.2195" zScoreVsHistory="-0.4475" xmi:id="g264_r7_s2"/>
+  <sensor modality="Temperature" mean="25.4551" max="27.7872" slope="-0.0320" variance="2.5388" zScoreVsHistory="2.8793" xmi:id="g264_r7_s3"/>
+  <sensor modality="CO2" mean="535.1553" max="659.7339" slope="0.1291" variance="96.3604" zScoreVsHistory="1.4193" xmi:id="g264_r8_s0"/>
+  <sensor modality="Humidity" mean="47.2575" max="53.4887" slope="0.0655" variance="10.4100" zScoreVsHistory="0.4515" xmi:id="g264_r8_s1"/>
+  <sensor modality="Motion" mean="0.5490" max="0.6086" slope="0.1112" variance="0.2931" zScoreVsHistory="3.9905" xmi:id="g264_r8_s2"/>
+  <sensor modality="Temperature" mean="24.2228" max="25.4173" slope="0.0851" variance="3.5834" zScoreVsHistory="1.8524" xmi:id="g264_r8_s3"/>
+  <sensor modality="Power" mean="0.3981" max="0.5271" slope="0.0069" variance="0.4364" zScoreVsHistory="-0.0126" xmi:id="g264_r9_s0"/>
+  <sensor modality="Temperature" mean="21.0615" max="21.5532" slope="-0.1365" variance="3.5470" zScoreVsHistory="-0.7821" xmi:id="g264_r9_s1"/>
+  <sensor modality="CO2" mean="397.9296" max="417.3470" slope="0.0603" variance="131.5644" zScoreVsHistory="-0.8678" xmi:id="g264_r9_s2"/>
+  <sensor modality="Smoke" mean="0.0321" max="0.0448" slope="0.1736" variance="0.0229" zScoreVsHistory="1.2132" xmi:id="g264_r9_s3"/>
+  <sensor modality="Humidity" mean="36.2563" max="46.0239" slope="-0.0561" variance="6.0703" zScoreVsHistory="-1.7487" xmi:id="g264_r9_s4"/>
+  <sensor modality="Power" mean="0.1012" max="0.2524" slope="0.1481" variance="0.3753" zScoreVsHistory="-1.9923" xmi:id="g264_r10_s0"/>
+  <sensor modality="CO2" mean="251.7520" max="494.3927" slope="-0.1444" variance="152.5971" zScoreVsHistory="-3.3041" xmi:id="g264_r10_s1"/>
+  <sensor modality="Humidity" mean="47.9631" max="55.5460" slope="-0.0010" variance="12.8914" zScoreVsHistory="0.5926" xmi:id="g264_r10_s2"/>
+  <sensor modality="Temperature" mean="20.4318" max="21.5602" slope="0.0895" variance="2.5259" zScoreVsHistory="-1.3069" xmi:id="g264_r10_s3"/>
+  <sensor modality="Motion" mean="-0.1402" max="-0.0823" slope="0.0351" variance="0.2358" zScoreVsHistory="-2.9021" xmi:id="g264_r10_s4"/>
+</iotbuilding:BuildingSnapshot>

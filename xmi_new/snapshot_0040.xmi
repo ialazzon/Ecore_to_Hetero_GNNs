@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<iotbuilding:BuildingSnapshot xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:iotbuilding="http://example.org/iotbuilding/1.0" xmi:version="2.0" label="HVACFault" windowStart="2026-01-01T16:00:00" floorId="floor_40">
+  <rooms id="g40_r0" roomType="Corridor" floorArea="31.4" nominalOccupancy="2" room_connection="c8" has="g40_r0_s0 g40_r0_s1 g40_r0_s2">
+    <connection xmi:id="c0" relation="SHARED_WALL" distance="4.9" airflowCoupling="0.226" room="//@rooms.8"/>
+  </rooms>
+  <rooms id="g40_r1" roomType="Lobby" floorArea="8.3" nominalOccupancy="9" room_connection="c4" has="g40_r1_s0 g40_r1_s1 g40_r1_s2">
+    <connection xmi:id="c1" relation="SAME_HVAC_DUCT" distance="14.86" airflowCoupling="0.607" room="//@rooms.4"/>
+    <connection xmi:id="c2" relation="SAME_HVAC_DUCT" distance="2.53" airflowCoupling="0.962" room="//@rooms.3"/>
+  </rooms>
+  <rooms id="g40_r2" roomType="Corridor" floorArea="21.7" nominalOccupancy="8" has="g40_r2_s0 g40_r2_s1 g40_r2_s2">
+    <connection xmi:id="c3" relation="ADJACENT_DOOR" distance="12.07" airflowCoupling="0.104" room="//@rooms.7"/>
+  </rooms>
+  <rooms id="g40_r3" roomType="Office" floorArea="28.7" nominalOccupancy="8" room_connection="c2 c9 c11" has="g40_r3_s0 g40_r3_s1 g40_r3_s2">
+    <connection xmi:id="c4" relation="ADJACENT_DOOR" distance="6.74" airflowCoupling="0.786" room="//@rooms.1"/>
+    <connection xmi:id="c5" relation="SAME_HVAC_DUCT" distance="8.36" airflowCoupling="0.799" room="//@rooms.9"/>
+  </rooms>
+  <rooms id="g40_r4" roomType="Lobby" floorArea="22.9" nominalOccupancy="26" room_connection="c1" has="g40_r4_s0 g40_r4_s1 g40_r4_s2">
+    <connection xmi:id="c6" relation="ADJACENT_DOOR" distance="19.06" airflowCoupling="0.151" room="//@rooms.7"/>
+  </rooms>
+  <rooms id="g40_r5" roomType="Office" floorArea="50.8" nominalOccupancy="13" room_connection="c10 c14" has="g40_r5_s0 g40_r5_s1 g40_r5_s2 g40_r5_s3 g40_r5_s4 g40_r5_s5">
+    <connection xmi:id="c7" relation="SAME_HVAC_DUCT" distance="24.16" airflowCoupling="0.415" room="//@rooms.9"/>
+    <connection xmi:id="c8" relation="SAME_HVAC_DUCT" distance="17.13" airflowCoupling="0.695" room="//@rooms.0"/>
+  </rooms>
+  <rooms id="g40_r6" roomType="Kitchen" floorArea="53.7" nominalOccupancy="19" has="g40_r6_s0 g40_r6_s1 g40_r6_s2 g40_r6_s3">
+    <connection xmi:id="c9" relation="ADJACENT_DOOR" distance="2.64" airflowCoupling="0.326" room="//@rooms.3"/>
+    <connection xmi:id="c10" relation="ADJACENT_DOOR" distance="4.82" airflowCoupling="0.032" room="//@rooms.5"/>
+  </rooms>
+  <rooms id="g40_r7" roomType="Stairwell" floorArea="8.6" nominalOccupancy="8" room_connection="c3 c6 c12" has="g40_r7_s0 g40_r7_s1 g40_r7_s2 g40_r7_s3 g40_r7_s4">
+    <connection xmi:id="c11" relation="ADJACENT_DOOR" distance="17.77" airflowCoupling="0.571" room="//@rooms.3"/>
+  </rooms>
+  <rooms id="g40_r8" roomType="Kitchen" floorArea="22.7" nominalOccupancy="13" room_connection="c0 c13" has="g40_r8_s0 g40_r8_s1 g40_r8_s2">
+    <connection xmi:id="c12" relation="ADJACENT_DOOR" distance="19.16" airflowCoupling="0.39" room="//@rooms.7"/>
+  </rooms>
+  <rooms id="g40_r9" roomType="Stairwell" floorArea="13.0" nominalOccupancy="3" room_connection="c5 c7" has="g40_r9_s0 g40_r9_s1 g40_r9_s2 g40_r9_s3 g40_r9_s4">
+    <connection xmi:id="c13" relation="ADJACENT_DOOR" distance="20.33" airflowCoupling="0.106" room="//@rooms.8"/>
+    <connection xmi:id="c14" relation="SAME_HVAC_DUCT" distance="13.28" airflowCoupling="0.776" room="//@rooms.5"/>
+  </rooms>
+  <sensor modality="Humidity" mean="25.9270" max="41.9852" slope="-0.0842" variance="16.0953" zScoreVsHistory="-3.8146" xmi:id="g40_r0_s0"/>
+  <sensor modality="Smoke" mean="0.0220" max="0.0303" slope="-0.2166" variance="0.0239" zScoreVsHistory="0.2019" xmi:id="g40_r0_s1"/>
+  <sensor modality="Temperature" mean="17.2953" max="20.4987" slope="-0.0155" variance="1.7707" zScoreVsHistory="-3.9206" xmi:id="g40_r0_s2"/>
+  <sensor modality="Humidity" mean="57.1636" max="61.3547" slope="-0.0163" variance="10.1493" zScoreVsHistory="2.4327" xmi:id="g40_r1_s0"/>
+  <sensor modality="Power" mean="0.8838" max="1.0213" slope="-0.0768" variance="0.2002" zScoreVsHistory="3.2252" xmi:id="g40_r1_s1"/>
+  <sensor modality="CO2" mean="656.7641" max="784.2444" slope="0.1022" variance="80.8296" zScoreVsHistory="3.4461" xmi:id="g40_r1_s2"/>
+  <sensor modality="Humidity" mean="37.8182" max="54.3832" slope="0.1169" variance="18.7816" zScoreVsHistory="-1.4364" xmi:id="g40_r2_s0"/>
+  <sensor modality="Power" mean="0.9576" max="1.0187" slope="0.0909" variance="0.1191" zScoreVsHistory="3.7174" xmi:id="g40_r2_s1"/>
+  <sensor modality="Motion" mean="0.2530" max="0.3584" slope="-0.0161" variance="0.1538" zScoreVsHistory="1.0295" xmi:id="g40_r2_s2"/>
+  <sensor modality="CO2" mean="651.6250" max="842.2019" slope="0.1683" variance="97.8112" zScoreVsHistory="3.3604" xmi:id="g40_r3_s0"/>
+  <sensor modality="Power" mean="0.1169" max="0.5162" slope="0.0597" variance="0.3103" zScoreVsHistory="-1.8870" xmi:id="g40_r3_s1"/>
+  <sensor modality="Humidity" mean="47.0289" max="48.9649" slope="0.2586" variance="12.8933" zScoreVsHistory="0.4058" xmi:id="g40_r3_s2"/>
+  <sensor modality="Smoke" mean="0.0447" max="0.0871" slope="-0.0541" variance="0.0182" zScoreVsHistory="2.4733" xmi:id="g40_r4_s0"/>
+  <sensor modality="Power" mean="0.4991" max="0.8357" slope="0.0069" variance="0.3580" zScoreVsHistory="0.6609" xmi:id="g40_r4_s1"/>
+  <sensor modality="CO2" mean="551.0544" max="680.0679" slope="0.1744" variance="131.0858" zScoreVsHistory="1.6842" xmi:id="g40_r4_s2"/>
+  <sensor modality="Motion" mean="0.1167" max="0.2211" slope="0.0644" variance="0.2692" zScoreVsHistory="-0.3331" xmi:id="g40_r5_s0"/>
+  <sensor modality="Smoke" mean="-0.0384" max="-0.0290" slope="0.1394" variance="0.0119" zScoreVsHistory="-5.8355" xmi:id="g40_r5_s1"/>
+  <sensor modality="Temperature" mean="23.0335" max="26.0812" slope="0.0501" variance="2.7279" zScoreVsHistory="0.8613" xmi:id="g40_r5_s2"/>
+  <sensor modality="CO2" mean="494.9996" max="564.2841" slope="-0.0261" variance="167.8813" zScoreVsHistory="0.7500" xmi:id="g40_r5_s3"/>
+  <sensor modality="Humidity" mean="43.1880" max="57.6336" slope="-0.0401" variance="16.9547" zScoreVsHistory="-0.3624" xmi:id="g40_r5_s4"/>
+  <sensor modality="Power" mean="0.8887" max="0.9341" slope="-0.0646" variance="0.5107" zScoreVsHistory="3.2580" xmi:id="g40_r5_s5"/>
+  <sensor modality="Humidity" mean="47.0982" max="56.8791" slope="0.1797" variance="12.4192" zScoreVsHistory="0.4196" xmi:id="g40_r6_s0"/>
+  <sensor modality="Power" mean="-0.1127" max="0.3112" slope="0.2125" variance="0.3355" zScoreVsHistory="-3.4177" xmi:id="g40_r6_s1"/>
+  <sensor modality="Smoke" mean="0.0260" max="0.0509" slope="-0.0624" variance="0.0242" zScoreVsHistory="0.5973" xmi:id="g40_r6_s2"/>
+  <sensor modality="Motion" mean="0.3218" max="0.6086" slope="-0.1011" variance="0.1325" zScoreVsHistory="1.7177" xmi:id="g40_r6_s3"/>
+  <sensor modality="Temperature" mean="20.4721" max="21.3072" slope="0.0188" variance="3.2338" zScoreVsHistory="-1.2733" xmi:id="g40_r7_s0"/>
+  <sensor modality="Humidity" mean="44.5769" max="71.2864" slope="-0.2130" variance="6.4825" zScoreVsHistory="-0.0846" xmi:id="g40_r7_s1"/>
+  <sensor modality="Motion" mean="-0.0729" max="0.4113" slope="-0.1094" variance="0.2419" zScoreVsHistory="-2.2286" xmi:id="g40_r7_s2"/>
+  <sensor modality="Smoke" mean="-0.0277" max="-0.0074" slope="-0.0422" variance="0.0160" zScoreVsHistory="-4.7668" xmi:id="g40_r7_s3"/>
+  <sensor modality="CO2" mean="176.7058" max="184.0892" slope="0.1190" variance="115.4525" zScoreVsHistory="-4.5549" xmi:id="g40_r7_s4"/>
+  <sensor modality="Humidity" mean="35.5430" max="38.0163" slope="0.0123" variance="13.0235" zScoreVsHistory="-1.8914" xmi:id="g40_r8_s0"/>
+  <sensor modality="CO2" mean="502.9731" max="511.9313" slope="-0.0456" variance="186.5039" zScoreVsHistory="0.8829" xmi:id="g40_r8_s1"/>
+  <sensor modality="Motion" mean="-0.0853" max="0.1918" slope="-0.0026" variance="0.3078" zScoreVsHistory="-2.3527" xmi:id="g40_r8_s2"/>
+  <sensor modality="Humidity" mean="39.1118" max="60.4588" slope="-0.0058" variance="8.9731" zScoreVsHistory="-1.1776" xmi:id="g40_r9_s0"/>
+  <sensor modality="Power" mean="0.5290" max="1.1062" slope="0.0469" variance="0.2481" zScoreVsHistory="0.8598" xmi:id="g40_r9_s1"/>
+  <sensor modality="Smoke" mean="0.0346" max="0.0938" slope="0.0036" variance="0.0229" zScoreVsHistory="1.4647" xmi:id="g40_r9_s2"/>
+  <sensor modality="Temperature" mean="18.1495" max="22.0197" slope="0.2547" variance="2.8310" zScoreVsHistory="-3.2088" xmi:id="g40_r9_s3"/>
+  <sensor modality="Motion" mean="0.2991" max="0.4478" slope="-0.1014" variance="0.1695" zScoreVsHistory="1.4912" xmi:id="g40_r9_s4"/>
+</iotbuilding:BuildingSnapshot>

@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<iotbuilding:BuildingSnapshot xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:iotbuilding="http://example.org/iotbuilding/1.0" xmi:version="2.0" label="SpoofingAttack" windowStart="2026-01-01T02:00:00" floorId="floor_722">
+  <rooms id="g722_r0" roomType="Office" floorArea="31.8" nominalOccupancy="12" room_connection="c2 c5 c7" has="g722_r0_s0 g722_r0_s1 g722_r0_s2 g722_r0_s3 g722_r0_s4"/>
+  <rooms id="g722_r1" roomType="Corridor" floorArea="52.5" nominalOccupancy="15" room_connection="c6" has="g722_r1_s0 g722_r1_s1 g722_r1_s2 g722_r1_s3 g722_r1_s4 g722_r1_s5">
+    <connection xmi:id="c0" relation="ADJACENT_DOOR" distance="22.77" airflowCoupling="0.123" room="//@rooms.2"/>
+    <connection xmi:id="c1" relation="SHARED_WALL" distance="22.11" airflowCoupling="0.377" room="//@rooms.4"/>
+    <connection xmi:id="c2" relation="SAME_HVAC_DUCT" distance="24.75" airflowCoupling="0.107" room="//@rooms.0"/>
+  </rooms>
+  <rooms id="g722_r2" roomType="Stairwell" floorArea="15.7" nominalOccupancy="2" room_connection="c0" has="g722_r2_s0 g722_r2_s1 g722_r2_s2 g722_r2_s3 g722_r2_s4">
+    <connection xmi:id="c3" relation="ADJACENT_DOOR" distance="6.37" airflowCoupling="0.031" room="//@rooms.3"/>
+  </rooms>
+  <rooms id="g722_r3" roomType="Office" floorArea="12.1" nominalOccupancy="11" room_connection="c3" has="g722_r3_s0 g722_r3_s1 g722_r3_s2 g722_r3_s3">
+    <connection xmi:id="c4" relation="SHARED_WALL" distance="9.88" airflowCoupling="0.825" room="//@rooms.5"/>
+  </rooms>
+  <rooms id="g722_r4" roomType="Lobby" floorArea="23.2" nominalOccupancy="15" room_connection="c1" has="g722_r4_s0 g722_r4_s1 g722_r4_s2">
+    <connection xmi:id="c5" relation="ADJACENT_DOOR" distance="4.06" airflowCoupling="0.655" room="//@rooms.0"/>
+    <connection xmi:id="c6" relation="SAME_HVAC_DUCT" distance="17.8" airflowCoupling="0.871" room="//@rooms.1"/>
+  </rooms>
+  <rooms id="g722_r5" roomType="Kitchen" floorArea="41.8" nominalOccupancy="6" room_connection="c4" has="g722_r5_s0 g722_r5_s1 g722_r5_s2 g722_r5_s3 g722_r5_s4">
+    <connection xmi:id="c7" relation="ADJACENT_DOOR" distance="10.71" airflowCoupling="0.728" room="//@rooms.0"/>
+  </rooms>
+  <sensor modality="Smoke" mean="-0.0028" max="0.0319" slope="-0.1885" variance="0.0226" zScoreVsHistory="-2.2771" xmi:id="g722_r0_s0"/>
+  <sensor modality="Power" mean="0.1275" max="0.2982" slope="0.0836" variance="0.2652" zScoreVsHistory="-1.8168" xmi:id="g722_r0_s1"/>
+  <sensor modality="Temperature" mean="26.7518" max="28.6852" slope="0.2089" variance="3.6528" zScoreVsHistory="3.9598" xmi:id="g722_r0_s2"/>
+  <sensor modality="CO2" mean="821.5570" max="981.7640" slope="0.3597" variance="177.9574" zScoreVsHistory="6.1926" xmi:id="g722_r0_s3"/>
+  <sensor modality="Humidity" mean="38.5185" max="46.6567" slope="0.0518" variance="14.7303" zScoreVsHistory="-1.2963" xmi:id="g722_r0_s4"/>
+  <sensor modality="Smoke" mean="-0.0049" max="0.0054" slope="0.1436" variance="0.0221" zScoreVsHistory="-2.4892" xmi:id="g722_r1_s0"/>
+  <sensor modality="Motion" mean="0.2589" max="0.3662" slope="0.1308" variance="0.2220" zScoreVsHistory="1.0890" xmi:id="g722_r1_s1"/>
+  <sensor modality="Power" mean="-0.0075" max="0.5847" slope="-0.1517" variance="0.2897" zScoreVsHistory="-2.7169" xmi:id="g722_r1_s2"/>
+  <sensor modality="Temperature" mean="21.6184" max="22.9281" slope="0.1414" variance="1.6584" zScoreVsHistory="-0.3180" xmi:id="g722_r1_s3"/>
+  <sensor modality="Humidity" mean="72.6289" max="99.4312" slope="-0.1102" variance="11.7156" zScoreVsHistory="5.5258" xmi:id="g722_r1_s4"/>
+  <sensor modality="CO2" mean="482.3723" max="515.6867" slope="0.0775" variance="157.0812" zScoreVsHistory="0.5395" xmi:id="g722_r1_s5"/>
+  <sensor modality="Smoke" mean="0.0392" max="0.0822" slope="-0.0369" variance="0.0288" zScoreVsHistory="1.9238" xmi:id="g722_r2_s0"/>
+  <sensor modality="Humidity" mean="39.2873" max="54.3402" slope="-0.0147" variance="9.8827" zScoreVsHistory="-1.1425" xmi:id="g722_r2_s1"/>
+  <sensor modality="CO2" mean="552.6865" max="825.4378" slope="0.0239" variance="265.8749" zScoreVsHistory="1.7114" xmi:id="g722_r2_s2"/>
+  <sensor modality="Power" mean="0.4122" max="0.6014" slope="-0.0607" variance="0.2965" zScoreVsHistory="0.0813" xmi:id="g722_r2_s3"/>
+  <sensor modality="Motion" mean="-0.1025" max="0.0597" slope="-0.0734" variance="0.2980" zScoreVsHistory="-2.5254" xmi:id="g722_r2_s4"/>
+  <sensor modality="Power" mean="0.0734" max="0.8092" slope="0.0502" variance="0.4506" zScoreVsHistory="-2.1770" xmi:id="g722_r3_s0"/>
+  <sensor modality="Smoke" mean="0.0106" max="0.0259" slope="0.0206" variance="0.0215" zScoreVsHistory="-0.9404" xmi:id="g722_r3_s1"/>
+  <sensor modality="CO2" mean="327.2591" max="486.1084" slope="0.0948" variance="192.9361" zScoreVsHistory="-2.0457" xmi:id="g722_r3_s2"/>
+  <sensor modality="Humidity" mean="56.8060" max="62.1012" slope="-0.0438" variance="15.6257" zScoreVsHistory="2.3612" xmi:id="g722_r3_s3"/>
+  <sensor modality="Power" mean="0.7057" max="1.1090" slope="0.0565" variance="0.2682" zScoreVsHistory="2.0381" xmi:id="g722_r4_s0"/>
+  <sensor modality="Temperature" mean="22.3114" max="24.7994" slope="0.0615" variance="3.8083" zScoreVsHistory="0.2595" xmi:id="g722_r4_s1"/>
+  <sensor modality="Smoke" mean="0.0112" max="0.0142" slope="-0.1384" variance="0.0321" zScoreVsHistory="-0.8840" xmi:id="g722_r4_s2"/>
+  <sensor modality="CO2" mean="316.8764" max="318.7572" slope="0.0250" variance="141.8478" zScoreVsHistory="-2.2187" xmi:id="g722_r5_s0"/>
+  <sensor modality="Temperature" mean="24.4903" max="26.3422" slope="-0.0746" variance="0.9780" zScoreVsHistory="2.0752" xmi:id="g722_r5_s1"/>
+  <sensor modality="Smoke" mean="0.0335" max="0.0674" slope="0.0132" variance="0.0242" zScoreVsHistory="1.3460" xmi:id="g722_r5_s2"/>
+  <sensor modality="Power" mean="0.5963" max="0.6680" slope="0.1944" variance="0.1029" zScoreVsHistory="1.3088" xmi:id="g722_r5_s3"/>
+  <sensor modality="Humidity" mean="32.3275" max="43.2531" slope="-0.1224" variance="15.6150" zScoreVsHistory="-2.5345" xmi:id="g722_r5_s4"/>
+</iotbuilding:BuildingSnapshot>
